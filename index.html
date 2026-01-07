@@ -1,133 +1,137 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Lumi Store</title>
+    <meta charset="UTF-8">
+    <title>Lumi Store</title>
 
-<style>
-body {
-    font-family: Arial;
-    background: linear-gradient(to bottom, #ffe6f2, #ffffff);
-    margin: 0;
-}
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* Cabeçalho */
-header {
-    background: white;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid #f5c6e6;
-}
+        body {
+            font-family: Arial;
+            background: linear-gradient(to bottom, #ffe6f2, #ffffff);
+            text-align: center;
+            padding: 20px;
+        }
 
-header h1 {
-    color: #d63384;
-    font-size: 32px;
-}
+        header{
+            padding: 20px;
+        }
 
-/* Frase */
-.banner {
-    text-align: center;
-    padding: 10px;
-    font-size: 18px;
-}
+        h1{
+            color:#d63384;
+        }
 
-/* Grid de produtos */
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 30px;
-}
+        .logo{
+            font-size: 26px;
+            font-weight: bold;
+            color:#d4a017;
+        }
 
-/* Card do produto */
-.card {
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #ffd6e8;
-}
+        .container{
+            max-width: 900px;
+            margin:auto;
+        }
 
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
+        .produtos{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
 
-.card h3 {
-    color: #d63384;
-}
+        .card{
+            border: 1px solid #ffd6e7;
+            padding: 15px;
+            border-radius: 12px;
+            background:white;
+        }
 
-.price {
-    font-size: 18px;
-    color: #b8860b;
-    font-weight: bold;
-}
+        .card img{
+            width: 100%;
+            border-radius: 10px;
+        }
 
-/* Botão WhatsApp */
-button {
-    background: #d63384;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-}
+        .preco{
+            font-weight: bold;
+            color:#d63384;
+        }
 
-button:hover {
-    background: #b02c6d;
-}
+        button{
+            padding: 12px 20px;
+            border-radius: 10px;
+            border:none;
+            cursor:pointer;
+            font-size: 15px;
+        }
 
-/* Rodapé */
-footer {
-    text-align: center;
-    padding: 20px;
-}
-</style>
+        .zap{
+            background:#25d366;
+            color:white;
+        }
+
+        footer{
+            margin-top:25px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-    <h1>✨ Lumi Store ✨</h1>
+    <div class="logo">✨ Lumi Store ✨</div>
+    <p>Moda feminina — elegância e delicadeza</p>
 </header>
-
-<div class="banner">
-    Moda feminina com elegância, delicadeza e muito charme 💖
-</div>
 
 <div class="container">
 
-    <div class="card">
-        <img src="https://via.placeholder.com/300x300?text=Produto+1">
-        <h3>Vestido Elegante</h3>
-        <p class="price">R$ 129,90</p>
-        <a href="https://wa.me/55SEUNUMERO?text=Olá! Quero saber mais sobre o Vestido Elegante">
-            <button>Comprar pelo WhatsApp</button>
-        </a>
+    <h2>🛍️ Produtos em destaque</h2>
+
+    <div class="produtos">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x300.png?text=Vestido+Rosa" alt="Vestido rosa">
+            <p>Vestido rosa</p>
+            <p class="preco">R$ 79,90</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x300.png?text=Blusa+Feminina" alt="Blusa feminina">
+            <p>Blusa feminina</p>
+            <p class="preco">R$ 49,90</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x300.png?text=Conjunto+Feminino" alt="Conjunto feminino">
+            <p>Conjunto feminino</p>
+            <p class="preco">R$ 119,90</p>
+        </div>
+
     </div>
 
-    <div class="card">
-        <img src="https://via.placeholder.com/300x300?text=Produto+2">
-        <h3>Conjunto Feminino</h3>
-        <p class="price">R$ 159,90</p>
-        <a href="https://wa.me/55SEUNUMERO?text=Olá! Quero saber mais sobre o Conjunto Feminino">
-            <button>Comprar pelo WhatsApp</button>
-        </a>
-    </div>
+    <h2>📲 Fale com a gente</h2>
 
-    <div class="card">
-        <img src="https://via.placeholder.com/300x300?text=Produto+3">
-        <h3>Blusa Fashion</h3>
-        <p class="price">R$ 89,90</p>
-        <a href="https://wa.me/55SEUNUMERO?text=Olá! Quero saber mais sobre a Blusa Fashion">
-            <button>Comprar pelo WhatsApp</button>
-        </a>
-    </div>
+    <a href="https://wa.me/55SEUNUMERO">
+        <button class="zap">Chamar no WhatsApp</button>
+    </a>
+
+    <br><br>
+
+    <a href="https://instagram.com/lumistore" target="_blank">
+        👉 Ir para o Instagram
+    </a>
 
 </div>
 
 <footer>
-    © 2026 Lumi Store — Feito com carinho 💗
+    © 2026 — Lumi Store — Todos os direitos reservados
 </footer>
 
 </body>

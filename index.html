@@ -12,16 +12,123 @@ body {
 }
 
 /* Cabeçalho */
-.header {
+header {
     background: white;
-    padding: 25px;
+    padding: 20px;
     text-align: center;
-    border-bottom: 3px solid #d63384;
+    border-bottom: 2px solid #f5c6e6;
 }
 
-.header h1 {
+header h1 {
     color: #d63384;
     font-size: 32px;
 }
 
-/* Ban*
+/* Frase */
+.banner {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Grid de produtos */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Card do produto */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ffd6e8;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #d63384;
+}
+
+.price {
+    font-size: 18px;
+    color: #b8860b;
+    font-weight: bold;
+}
+
+/* Botão WhatsApp */
+button {
+    background: #d63384;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b02c6d;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>✨ Lumi Store ✨</h1>
+</header>
+
+<div class="banner">
+    Moda feminina com elegância, delicadeza e muito charme 💖
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x300?text=Produto+1">
+        <h3>Vestido Elegante</h3>
+        <p class="price">R$ 129,90</p>
+        <a href="https://wa.me/55SEUNUMERO?text=Olá! Quero saber mais sobre o Vestido Elegante">
+            <button>Comprar pelo WhatsApp</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x300?text=Produto+2">
+        <h3>Conjunto Feminino</h3>
+        <p class="price">R$ 159,90</p>
+        <a href="https://wa.me/55SEUNUMERO?text=Olá! Quero saber mais sobre o Conjunto Feminino">
+            <button>Comprar pelo WhatsApp</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x300?text=Produto+3">
+        <h3>Blusa Fashion</h3>
+        <p class="price">R$ 89,90</p>
+        <a href="https://wa.me/55SEUNUMERO?text=Olá! Quero saber mais sobre a Blusa Fashion">
+            <button>Comprar pelo WhatsApp</button>
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Lumi Store — Feito com carinho 💗
+</footer>
+
+</body>
+</html>
